@@ -1,6 +1,6 @@
 FROM centos
 
-MAINTAINER Cody De Arkland <cdearkland@vmware.com>
+MAINTAINER Steffen Moen <smoen@vmware.com>
 
 EXPOSE 443
 
@@ -32,8 +32,8 @@ COPY . /srv/avss/appdata
 RUN mv configs/nginx.conf /etc/nginx/nginx.conf
 RUN mv configs/avss.ini /etc/uwsgi.d/avss.ini
 RUN mv configs/alexavsphereskill.conf /etc/nginx/conf.d/alexavsphereskill.conf
-RUN mkdir -p /etc/letsencrypt/live/pyva.humblelab.com/
-RUN mv configs/*.pem /etc/letsencrypt/live/pyva.humblelab.com/
+RUN mkdir -p /etc/letsencrypt/live/alexa.steffenmoen.no/
+RUN mv configs/*.pem /etc/letsencrypt/live/alexa.steffenmoen.no/
 RUN mv configs/startup.sh /srv/avss/startup.sh
 RUN rmdir /srv/avss/appdata/configs
 
