@@ -1,6 +1,6 @@
 FROM alpine:3.6
 
-LABEL maintainer="cdearkland@vmware.com"
+LABEL maintainer="Steffen Moen <smoen@vmware.com>""
 
 EXPOSE 443
 
