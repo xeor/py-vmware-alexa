@@ -1,0 +1,8 @@
+uwsgi
+flask
+flask-ask
+requests
+configparser
+flask_sqlalchemy
+flask_assets
+pyvmomi
