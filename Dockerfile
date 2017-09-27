@@ -5,11 +5,14 @@ LABEL maintainer="Steffen Moen <smoen@vmware.com>"
 EXPOSE 443
 
 # Do installing/building first, so we can leverage dockers layer by layer
-# cacheing.
+# caching
+
+# py3-zope-interface.
 COPY root/requirements.txt /
 RUN set -ex \
     && apk update \
     && apk add python3 nginx git curl \
+    && mkdir /run/nginx \
 
     # Installing build dependencies, then python packages, last cleanup.
     && apk add --no-cache --virtual .build-deps \

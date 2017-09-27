@@ -4,6 +4,10 @@ services:
   app:
     build: .
     ports:
-      - "443:443"
+      - "8443:443"
     volumes:
-      - "./config:/app/config"
+      - "./data/config:/app/config"
+      - "./data/letsencrypt:/etc/letsencrypt"
+    environment:
+      DOMAIN: ""
+      MAIL: ""

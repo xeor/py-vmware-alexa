@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv sh
+
+#echo -n "Waiting for letsencrypt certificates to show up: "
+#while ! [ -e "/etc/letsencrypt/fullchain.pem" ]; do echo -n "."; sleep 0.5; done
+#echo " OK"
+
+sed "s/__DOMAIN__/${DOMAIN}/" -i /etc/nginx/conf.d/default.conf

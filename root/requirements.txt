@@ -6,3 +6,7 @@ configparser
 flask_sqlalchemy
 flask_assets
 pyvmomi
+
+# letsencrypt
+certbot
+certbot-nginx
