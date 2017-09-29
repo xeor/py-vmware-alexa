@@ -1,3 +1,3 @@
 #!/usr/bin/with-contenv sh
 
-exec certbot --nginx -d ${DOMAIN} --test-cert --agree-tos -n -m ${MAIL}
+exec certbot --nginx -d ${DOMAIN} --agree-tos -n -m ${MAIL}
