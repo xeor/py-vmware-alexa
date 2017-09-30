@@ -1,1 +1,2 @@
-/srv/avss/appdata/etc/ true nginx 0644 0644
+/srv/avss/appdata/etc/auth.conf false nginx 0644 0644
+/srv/avss/appdata/etc/config.conf false nginx 0644 0644
