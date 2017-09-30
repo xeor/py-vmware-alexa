@@ -7,7 +7,9 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - "./data/config:/app/config"
+      # This path is hardcoded many places...
+      - "./data/config:/srv/avss/appdata/etc"
+
       - "./data/letsencrypt:/etc/letsencrypt"
     environment:
       DOMAIN: ""
