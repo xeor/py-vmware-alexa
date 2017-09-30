@@ -12,5 +12,6 @@ services:
 
       - "./data/letsencrypt:/etc/letsencrypt"
     environment:
+      # Set DOMAIN=... and MAIL=... in a file called ".env"
       DOMAIN: "${DOMAIN}"
       MAIL: "${MAIL}"
