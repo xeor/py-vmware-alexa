@@ -12,5 +12,5 @@ services:
 
       - "./data/letsencrypt:/etc/letsencrypt"
     environment:
-      DOMAIN: ""
-      MAIL: ""
+      DOMAIN: "${DOMAIN}"
+      MAIL: "${MAIL}"
